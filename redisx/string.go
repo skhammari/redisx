@@ -3,7 +3,6 @@ package redisx
 import (
 	"context"
 	"github.com/redis/go-redis/v9"
-	"github.com/skhammari/redisx"
 )
 
 type StringOps struct {
@@ -11,7 +10,7 @@ type StringOps struct {
 }
 
 func NewStringOps() *StringOps {
-	client := redisx.RedisX()
+	client := RedisX()
 	return &StringOps{
 		client: client,
 	}
