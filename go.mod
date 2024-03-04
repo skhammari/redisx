@@ -1,4 +1,4 @@
-module github.com/skhammari/redisx
+module redisx
 
 go 1.21
 
